@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar" id="bar">
+            <li id="closebar"><a href="#"><img src="/icons8-close-50.png" style="background-color: aliceblue; width: 30px; height: 30px;"></li></a>
+            <li><a href="index.html">Home</li></a>
+            <li><a href="contact.html">Contact</li></a>
+            <li><a href="about.html">About</li></a>
+        </ul>
+        <ul>
+            <li class="hideonmobile"><a href="index.html">Home</li></a>
+            <li class="hideonmobile"><a href="contact.html">Contact</li></a>
+            <li class="hideonmobile"><a href="about.html">About</li></a>
+            <li class="large-screen" id="ShowSidebar"><a href="#"><img src="/icons8-menu-50.png" alt="" style="background-color: aliceblue; width: 30px; height: 30px;"></a></li>
+        </ul>
+    </nav>
+    <h1>CONTACT US</h1>
+    <button id="bgBtn">Dark Mode</button>
+    <main>
+        <form action="">
+            <fieldset><legend>Login</legend>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" id="" placeholder="Enter your message"></textarea>
+            <button type="submit">Send</button>
+            </fieldset>
+        </form>
+    </main>
+    <main>
+            <form action="" id="form">
+            <fieldset><legend>Login</legend>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="password" required minlength="8">
+            <button type="submit" id="click">Send</button>
+            </fieldset>
+        </form>
+    </main>
+    <script src="/JS/function.js"></script>
+</body>
+</html>

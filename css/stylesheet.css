@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+h1{
+    color: darkblue;
+}
+p{
+    color: green;
+}
+nav{
+    background-color: crimson;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav a:hover{
+    background-color: white;
+}
+
+fieldset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+form{
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;  
+}
+
+.darkmode{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.swapdisplay{
+    display: flex;
+}
+.scoop{
+    display: none;
+}
+
+@media(max-width: 600px){
+        .hideonmobile{
+        display: none;
+    }
+    .large-screen{
+        display: flex;
+    }
+    nav{
+        background-color: white;
+    }
+    body{
+        font-size: 20px;
+        background-color: darkgoldenrod;
+    }
+}
+
+@media(min-width: 600px){
+        .large-screen{
+        display: none;
+    }
+
+}
+
+@media(min-width:601px) and (max-width:1024px){
+        body{
+            background-color: lightgreen;
+            font-size: 30px;
+        }
+}
+
+.box{
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 30px;
+    background-color: chartreuse;
+}
+
+.box:hover{
+    box-shadow: 0 0 15px black;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border: none;
+    transition: transform 1s ease;
+}
+
+button:hover{
+     background-color: darkblue;
+     transform: scale(0.9);
+}
